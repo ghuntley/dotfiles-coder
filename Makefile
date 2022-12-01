@@ -2,11 +2,15 @@
 
 install:
 	echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
+
+	stow bash -t ~
 	stow editorconfig -t ~
 	stow git -t ~
 	stow nix -t ~
 	stow nixpkgs -t ~
+	stow profile -t ~
 	stow ssh -t ~
+	stow starship -t ~
 	stow tmux -t ~
 	stow vim -t ~
 	nix-env -i \
@@ -21,6 +25,7 @@ install:
 		jq \
 		lazygit \
 		neovim \
+		starship \
 		tmux
 
 publish:
