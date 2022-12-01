@@ -10,10 +10,12 @@ install:
 	stow vim -t ~
 	nix-env -i \
 		bat \
+		diff-so-fancy \
 		curl \
 		direnv \
 		git \
 		git-lfs \
+		htop \
 		jq \
 		lazygit \
 		neovim \

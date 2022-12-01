@@ -41,7 +41,7 @@ git = !exec git
 excludesfile = ~/.gitignore
 attributesfile = ~/.gitattributes
 precomposeUnicode = true
-fsmonitor = true
+fsmonitor = false
 
 [commit]
 gpgsign = false
