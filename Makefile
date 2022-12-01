@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := install
 
 install:
+	echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
 	stow editorconfig -t ~
 	stow git -t ~
 	stow nix -t ~
@@ -13,6 +14,7 @@ install:
 		diff-so-fancy \
 		curl \
 		direnv \
+		gh \
 		git \
 		git-lfs \
 		htop \
