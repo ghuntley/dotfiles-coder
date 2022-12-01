@@ -29,10 +29,10 @@ install:
 		tmux
 
 publish:
+	git add -A
 	git diff
 	echo ""
 	printf "%s " "Ensure no secrets will be commited. Press enter to continue"
 	read ans
-	git add -A
-	git commit -am "`date`"
+	git commit -m "`date`"
 	git push
