@@ -20,3 +20,11 @@ install:
 		lazygit \
 		neovim \
 		tmux
+
+publish:
+	git diff
+	echo ""
+	printf "%s " "Ensure no secrets will be commited. Press enter to continue"
+	read ans
+	git commit -am "`date`"
+	git push
