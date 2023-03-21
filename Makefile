@@ -17,20 +17,20 @@ install:
 	stow tmux -t ~
 	stow vim -t ~
 
-	nix-env -i \
-		bat \
-		diff-so-fancy \
-		curl \
-		direnv \
-		gh \
-		git \
-		git-lfs \
-		htop \
-		jq \
-		lazygit \
-		neovim \
-		starship \
-		tmux
+#	nix-env -i \
+#		bat \
+#		diff-so-fancy \
+#		curl \
+#		direnv \
+#		gh \
+#		git \
+#		git-lfs \
+#		htop \
+#		jq \
+#		lazygit \
+#		neovim \
+#		starship \
+#		tmux
 
 publish:
 	git diff
