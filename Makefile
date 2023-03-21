@@ -3,6 +3,10 @@
 install:
 	echo fs.inotify.max_user_watches=100000 | sudo tee -a /etc/sysctl.conf; sudo sysctl -p
 
+	rm -f .bashrc
+	rm -f .config/nix/nix.conf
+	rm -f .config/nixpkgs/config.nix
+	
 	stow bash -t ~
 	stow editorconfig -t ~
 	stow git -t ~
