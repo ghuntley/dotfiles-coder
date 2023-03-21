@@ -12,7 +12,6 @@ install:
 	stow git -t ~
 	stow nix -t ~
 	stow nixpkgs -t ~
-	stow profile -t ~
 	stow ssh -t ~
 	stow starship -t ~
 	stow tmux -t ~
