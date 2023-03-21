@@ -118,3 +118,6 @@ fi
 
 # https://starship.rs/
 eval "$(starship init bash)"
+
+# Configure GHCUP
+source .ghcup/env
