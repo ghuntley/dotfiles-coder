@@ -4,10 +4,12 @@ install:
 	rm -f ~/.bash_profile
 	rm -f ~/.config/nix/nix.conf
 	rm -f ~/.config/nixpkgs/config.nix
-	
+
 	stow bash -t ~
 	stow editorconfig -t ~
 	stow git -t ~
+	stow gptcommit -t ~
+	stow lazygit -t ~
 	stow nix -t ~
 	stow nixpkgs -t ~
 	stow ssh -t ~
