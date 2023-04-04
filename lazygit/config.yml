@@ -1,5 +1,0 @@
-customCommands:
-  - key: 'c'
-    command: "git commit"
-    context: 'global'
-    subprocess: true
